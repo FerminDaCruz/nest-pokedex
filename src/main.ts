@@ -18,6 +18,10 @@ async function bootstrap() {
     })
   )
 
+  console.log('ANTES DE LISTEN');
+
   await app.listen(process.env.PORT ?? 3000, '0.0.0.0');
+
+  console.log('DESPUÉS DE LISTEN');
 }
 bootstrap();
